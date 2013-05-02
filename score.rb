@@ -21,7 +21,7 @@ class Score
 					end
 					@stack.push(10)
 				when '/' # spare
-					if @stack.size > 1
+					if @stack.size >= 1
 						@next = @stack[-1]
 						@score += @next
 					end
